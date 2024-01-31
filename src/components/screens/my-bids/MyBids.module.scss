@@ -1,0 +1,56 @@
+.my-bids {
+	margin-top: 200px;
+	font-family: var(--golos);
+	color: #2a2a36;
+	@media (max-width: 760px) {
+		& {
+			margin-top: 150px;
+		}
+	}
+
+	.main {
+		width: 100%;
+		background-color: #fafafa;
+	}
+
+	.content {
+		width: 80%;
+		padding: 40px 0;
+		margin: 0 auto;
+		@media (max-width: 1000px) {
+			& {
+				width: 100%;
+			}
+		}
+		@media (max-width: 760px) {
+			& {
+				padding: 20px 0;
+			}
+		}
+	}
+
+	h1 {
+		font-size: 50px;
+		font-weight: 800;
+		@media (max-width: 760px) {
+			& {
+				font-size: 34px;
+				text-align: center;
+			}
+		}
+		@media (max-width: 575px) {
+			& {
+				font-size: 30px;
+			}
+		}
+	}
+
+	.list-bids {
+		margin-top: 30px;
+		@media (max-width: 760px) {
+			& {
+				margin-top: 20px;
+			}
+		}
+	}
+}

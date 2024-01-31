@@ -1,0 +1,35 @@
+.list-cities {
+	font-family: var(--golos);
+	width: 100%;
+	margin-top: 10px;
+	background-color: #fafafa;
+	border: 1px solid #d3cece;
+	border-radius: 10px;
+	padding: 10px 10px;
+	height: 247px;
+	overflow: auto;
+
+	.city {
+		background-color: #e9e8e8;
+		margin-bottom: 5px;
+		padding-left: 5px;
+		padding: 5px 10px;
+		border-radius: 6px;
+		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+		&:hover {
+			background-color: #dbdbdb;
+		}
+		@media (max-width: 760px) {
+			& {
+				background-color: #e9e8e8;
+			}
+		}
+
+		p {
+			font-size: 20px;
+			font-weight: 500;
+			color: #2a2a36;
+		}
+	}
+}

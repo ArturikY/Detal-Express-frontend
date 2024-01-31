@@ -1,0 +1,149 @@
+.header {
+	font-family: var(--golos);
+	padding: 30px 0;
+	background-color: #fafafa;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	transition: all 0.3s ease-in-out;
+	@media (max-width: 760px) {
+		& {
+			box-shadow: 0 0 29px -11px rgba(0, 0, 0, 0.6);
+			backdrop-filter: blur(10px);
+			padding: 10px 0;
+		}
+	}
+
+	&.mini {
+		box-shadow: 0 0 29px -11px rgba(0, 0, 0, 0.6);
+		backdrop-filter: blur(10px);
+		padding: 20px 0;
+		@media (max-width: 760px) {
+			& {
+				box-shadow: 0 0 29px -11px rgba(0, 0, 0, 0.6);
+				backdrop-filter: blur(10px);
+				padding: 10px 0;
+			}
+		}
+	}
+
+	.content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.nav-bar {
+		display: flex;
+		align-items: center;
+		gap: 40px;
+		@media (max-width: 760px) {
+			& {
+				gap: 20px;
+			}
+		}
+	}
+
+	.location {
+		font-size: 30px;
+		transition: color 0.3s ease-in-out;
+		cursor: pointer;
+		&:hover {
+			color: #ea614f;
+		}
+		&.hidden {
+			display: none;
+		}
+	}
+
+	.auth {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		&.hidden {
+			display: none;
+		}
+		@media (max-width: 760px) {
+			& {
+				gap: 0;
+			}
+		}
+
+		.register {
+			display: flex;
+			align-items: center;
+			gap: 8px;
+			cursor: pointer;
+			p {
+				transition: all 0.3s ease-in-out;
+				@media (max-width: 760px) {
+					& {
+						display: none;
+					}
+				}
+			}
+			&:hover {
+				p {
+					color: #ea614f;
+				}
+			}
+
+			.icon {
+				font-size: 24px;
+				color: #ea614f;
+				@media (max-width: 760px) {
+					& {
+						font-size: 34px;
+					}
+				}
+			}
+		}
+
+		.login {
+			font-size: 16px;
+			font-weight: 400;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+			p {
+				transition: all 0.3s ease-in-out;
+				@media (max-width: 760px) {
+					& {
+						display: none;
+					}
+				}
+			}
+			&:hover {
+				p {
+					color: #ea614f;
+				}
+			}
+		}
+
+		.line {
+			height: 20px;
+			width: 1px;
+			background-color: #e4e0e0;
+			@media (max-width: 760px) {
+				& {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.profile {
+		display: block;
+		&.hidden {
+			display: none;
+		}
+	}
+
+	.position {
+		display: block;
+		&.hidden {
+			display: none;
+		}
+	}
+}
